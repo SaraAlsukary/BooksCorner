@@ -458,7 +458,7 @@ section {
 
 
 
-section .image {
+section.image {
     position: relative;
     min-height: 100vh;
     background-image: url(../imgs/books-1697055167453-7392.jpg);
@@ -467,13 +467,13 @@ section .image {
 }
 
 @media (max-width: 767px) {
-    section .image {
+    section.image {
         background-position: center;
     }
 
 }
 
-section .image .content-text {
+section.image .content-text {
     width: 587px;
     height: 269px;
     position: absolute;
@@ -487,15 +487,16 @@ section .image .content-text {
 
 
 @media (max-width: 767px) {
-    section .image .content-text {
+    section.image .content-text {
         position: absolute;
-        top: 86px;
+        top: 160px;
         left: 49%;
+        width: 350px;
     }
 }
 
 
-section .image .content-text h2 {
+section.image .content-text h2 {
     color: var(--main-color);
     font-family: 'FontAwesome';
     letter-spacing: 5px;
@@ -506,13 +507,13 @@ section .image .content-text h2 {
 
 
 @media (max-width: 767px) {
-    section .image .content-text h2 {
+    section.image .content-text h2 {
         font-size: 30px;
     }
 
 }
 
-section .image .content-text p {
+section.image .content-text p {
     line-height: 2;
     color: var(--secondery-color);
     font-size: 20px;
@@ -1159,6 +1160,15 @@ form .form-content .sign-up-text {
     font-family: auto;
     color: var(--secondery-color);
     font-weight: bold;
+}
+
+.contact .text {
+    position: relative;
+}
+
+.contact .text a {
+    font-size: 20px;
+    text-align: center;
 }
 
 /* End Contact */
